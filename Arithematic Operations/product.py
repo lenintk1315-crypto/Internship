@@ -4,8 +4,6 @@ def product():
     c=a*b
     if c<=1000:
         return c
-        print("The product is ", c)
     else:
         return a+b
-        print("The sum is ", a+b)
 print(product())
