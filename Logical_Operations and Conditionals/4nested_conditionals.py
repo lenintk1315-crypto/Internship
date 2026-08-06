@@ -1,11 +1,11 @@
-def nested(side1,side2,side3):
-    def traingle():
+def triangle(side1,side2,side3):
+    def equilateral():
         return side1==side2==side3
     def isosceles():
         return side1==side2 or side2==side3 or side1==side3
     def scalene():
         return side1!=side2!=side3
-    if traingle():
+    if equilateral():
         print("The triangle is an equilateral triangle")
     elif isosceles():
         print("The triangle is an isosceles triangle")
@@ -17,7 +17,7 @@ def main():
     side1=int(input("Enter the first side:"))
     side2=int(input("Enter the second side:"))
     side3=int(input("Enter the third side:"))
-    nested(side1,side2,side3)
+    triangle(side1,side2,side3)
 main()
 
 
