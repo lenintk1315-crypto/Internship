@@ -1,5 +1,8 @@
 def check_login():
     password = input("Enter your password: ")
+    return password
+def main():
+    password=check_login()
     if len(password)<8:
         print("Password is invalid : It should be at least 8 characters long")
     elif not any(char.isdigit() for char in password):
@@ -8,4 +11,4 @@ def check_login():
         print("Password is invalid : It should contain at least one uppercase letter")
     else:
         print("Password is valid")
-check_login()
+main()

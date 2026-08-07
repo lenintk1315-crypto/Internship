@@ -1,33 +1,40 @@
-def triangle(side1,side2,side3):
-    def equilateral():
-        return side1==side2==side3
-    def isosceles():
-        return side1==side2 or side2==side3 or side1==side3
-    def scalene():
-        return side1!=side2!=side3
-    if equilateral():
-        print("The triangle is an equilateral triangle")
-    elif isosceles():
-        print("The triangle is an isosceles triangle")
-    elif scalene():
-        print("The triangle is a scalene triangle")
+def nested_triangle(side1,side2,side3):
+    if (side1==side2==side3):
+        print("The Triangle is Equtorial")
+    elif  side1==side2 or side2==side3 or side1==side3:
+        print("The Triangle is isosceles ")   
     else:
-        print("The triangle is not valid")
+        print("The triangle is scalene")
 def main():
-    side1=int(input("Enter the first side:"))
-    side2=int(input("Enter the second side:"))
-    side3=int(input("Enter the third side:"))
-    triangle(side1,side2,side3)
+   side1=int(input("Enter the side1:"))
+   side2=int(input("Enter the side2:"))
+   side3=int(input("Enter the side:3"))
+   nested_triangle(side1,side2,side3)
 main()
 
 
-
-
-
-
-
-
-
+# ////////////
+#  def triangle(side1,side2,side3):
+#     def equilateral():
+#         return side1==side2==side3
+#     def isosceles():
+#         return side1==side2 or side2==side3 or side1==side3
+#     def scalene():
+#         return side1!=side2!=side3
+#     if equilateral():
+#         print("The triangle is an equilateral triangle")
+#     elif isosceles():
+#         print("The triangle is an isosceles triangle")
+#     elif scalene():
+#         print("The triangle is a scalene triangle")
+#     else:
+#         print("The triangle is not valid")
+# def main():
+#     side1=int(input("Enter the first side:"))
+#     side2=int(input("Enter the second side:"))
+#     side3=int(input("Enter the third side:"))
+#     triangle(side1,side2,side3)
+# main()
 
 # /////////////////////////////////////
 # def triangle(side1,side2,side3):
@@ -49,3 +56,5 @@ main()
 #     else:
 #         print("The triangle is not valid")
 # main()
+
+
