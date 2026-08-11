@@ -1,5 +1,4 @@
 def remove_chars(s,name):
-    # for index,name in enumerate(name):
         print(name[s:])
 
 def main():
