@@ -1,12 +1,9 @@
-def dictionary_merge():
-    details_1={
-        "name":"Alice",
-        "age":25,
-    }
-    details_2={
-        "city":"NY",
-        "job":"Engineer"
-    }
-    details_1.update(details_2)
-    print(details_1)
-dictionary_merge()
+def merge_consolidation(dict1,dict2):
+    dict1.update(dict2)
+    print(dict1)
+
+def main():
+    dict1= {"name":"Alice","age":25}
+    dict2= {"city":"NY","job":"Engineer"}
+    merge_consolidation(dict1,dict2)
+main()
